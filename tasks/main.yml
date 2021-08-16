@@ -75,6 +75,7 @@
     login_port: "{{ mongodb_login_port|default(27017) }}"
     login_host: "{{ mongodb_login_host|default('localhost') }}"
     ssl: "{{ True if mongodb_net_ssl_mode == 'requireSSL' else False }}"
+    ssl_cert_reqs: "CERT_NONE"
   with_items:
     - "{{ mongodb_users | default([]) }}"
   when: ( mongodb_replication_replset
