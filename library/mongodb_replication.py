@@ -81,7 +81,7 @@ options:
         description:
             - Specifies whether a certificate is required from the other side of the connection, and whether it will be validated if provided.
         required: false
-        default: "CERT_REQUIRED"
+        default: "CERT_NONE"
         choices: ["CERT_REQUIRED", "CERT_OPTIONAL", "CERT_NONE"]
     build_indexes:
         description:
