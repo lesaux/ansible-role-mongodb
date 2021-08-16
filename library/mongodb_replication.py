@@ -387,7 +387,7 @@ def main():
             host_port=dict(default='27017'),
             host_type=dict(default='replica', choices=['replica', 'arbiter']),
             ssl=dict(default=False, type='bool'),
-            ssl_cert_reqs=dict(default='CERT_REQUIRED', choices=['CERT_NONE', 'CERT_OPTIONAL', 'CERT_REQUIRED']),
+            ssl_cert_reqs=dict(default='CERT_NONE', choices=['CERT_NONE', 'CERT_OPTIONAL', 'CERT_REQUIRED']),
             build_indexes=dict(type='bool', default='yes'),
             hidden=dict(type='bool', default='no'),
             priority=dict(default='1.0'),
